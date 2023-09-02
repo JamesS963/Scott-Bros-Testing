@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Mechanic Garage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Reset some default styles */
+    body, h1, h2, h3, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Main styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px; /* Adjust this value as needed */
+      margin: 0 auto; /* Center the container horizontally */
+      padding: 20px; /* Add some padding to space the content from the edges */
+    }
+
+    /* Phone Numbers Section Styles */
+.phone-numbers {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.phone-numbers h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.phone-numbers p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+    /* Remove margin for h1 */
+    header h1 {
+      margin: 0;
+    }
+    
+    /* Header */
+    header {
+      background-color: #1e88e5; /* Light blue color */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 32px;
+    }
+    
+    /* Navigation */
+    nav {
+      background-color: #1976d2; /* Dark blue color */
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+    }
+    
+    /* Hero section */
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1486006920555-c77dcf18193c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1296&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    
+    /* Services section */
+    .services {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+      text-align: center;
+    }
+    
+    .services h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .services p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    
+    /* Location section */
+    .location {
+      text-align: center;
+      padding: 50px 0;
+    }
+    
+    .location iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+    }
+    
+    /* About section */
+    .about {
+      background-color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+    
+    .about h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .about p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    
+    /* Contact section */
+    .contact {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+      text-align: center;
+    }
+    
+    .contact h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    .contact p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    
+    .contact form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .contact form input[type="text"],
+    .contact form input[type="email"],
+    .contact form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+    
+    .contact form button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+   /* Footer */
+   footer {
+      background-color: #1e88e5; /* Light blue color */
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 24px;
+      }
+      
+      nav ul li {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Scot Bros Garage</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <section class="hero" id="hero">
+    <div>
+      <h2>Your Trusted Mechanic Garage</h2>
+      <p>We provide high-quality auto repair and maintenance services</p>
+      <a href="#" class="btn">Book an Appointment</a>
+    </div>
+  </section>
+  
+  <section class="services" id="services">
+    <div class="container">
+      <h3>Our Services</h3>
+       <p>At Scot Bros Garage, we are committed to providing top-notch auto repair and maintenance services to keep your vehicle running smoothly. Our team of experienced technicians is dedicated to delivering quality work and exceptional customer service.</p>
+      <div class="service">
+        <i class="fas fa-car"></i>
+        <h4>Vehicle Diagnostics</h4>
+        <p>We use advanced diagnostic tools to identify and fix issues with your vehicle. Whether it's a check engine light or a mysterious noise, we can diagnose and repair it.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-tools"></i>
+        <h4>Mechanical Repairs</h4>
+        <p>Our skilled technicians can handle all types of mechanical repairs, from engine and transmission repairs to brake and suspension work. We're here to get your vehicle back on the road safely.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-wrench"></i>
+        <h4>Oil Change & Maintenance</h4>
+        <p>Regular oil changes and maintenance services are essential for the longevity of your vehicle. We offer quick and reliable oil change services along with comprehensive maintenance checks to keep your car in optimal condition.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="location" id="location">
+    <div class="container">
+        <h3 style="margin-bottom: 20px; font-size: 24px;">Our Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228271.4268247255!2d-4.317040662794545!3d55.86423700029001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888442b695f81a1%3A0x8c07ba2c830e669!2sGlasgow!5e0!3m2!1sen!2suk!4v1627961880508!5m2!1sen!2suk" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+        <!-- Location Information Box -->
+        <div class="location-info">
+            <h4>Our Address:</h4>
+            <p>11 Burnside Crescent</p>
+            <p>Hardgate, G81 6QE</p>
+        </div>
+    </div>
+</section>
+
+<section class="about" id = "about">
+    <div class="container">
+      <h3>About Us</h3>
+      <p>Scot Bros Garage has been a trusted name in the automotive industry for over four decades. Established in 1983, our family-owned business has proudly served the Glasgow community and beyond for 40 years.</p>
+      
+      <p>Throughout our journey, we have built a reputation for excellence in auto repair and maintenance. Our commitment to quality workmanship, honest service, and customer satisfaction has remained unwavering since day one.</p>
+      
+      <p>As a testament to our dedication, we have continually invested in state-of-the-art technology and training for our team of experts. This ensures that we can provide you with the best solutions for your vehicle, no matter its make or model.</p>
+
+      <p>At Scot Bros Garage, we look forward to serving you for many more years to come. Thank you for choosing us as your trusted partner for all your automotive needs.</p>
+      
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <section class="contact" id = "contact">
+    <div class="container">
+      <h3>Contact Us</h3>
+      <p>Have any questions? Get in touch with our team.</p>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <!-- Phone Numbers Section (Placeholder) -->
+<div class="phone-numbers">
+  <h4>Phone Numbers</h4>
+  <p>Main Office: +1 (123) 456-7890</p>
+  <p>Sales: +1 (987) 654-3210</p>
+  <p>Support: +1 (555) 123-4567</p>
+</div>
+
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2023 Scott Bros. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll("nav ul li a");
+  
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = link.getAttribute("href").substring(1);
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            window.scrollTo({
+              top: targetSection.offsetTop,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    });
+  </script>
+  
+</body>
+</html>
